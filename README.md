@@ -6,4 +6,4 @@ Mapeamento dos fluxos de compras no âmbinto do Novo DC do ComprasGov.
 
 Esse repositório tem como objetivo mapear o fluxo de credenciamento no âmbito do Novo DC do ComprasGov.
 
-Será usado como base o [Fluxo dos Processos de Compra](https://lucid.app/lucidchart/06836d7e-9550-4283-a8ee-6fa083e2edc9/edit?page=0_0#) das bases legadas (Lei 8.666/93 e Decreto 10.024/2019).
+Será usado como base o [Fluxo dos Processos de Compra](https://whimsical.com/novo-fluxo-dos-processos-de-compra-21Te7Vhs4u28RnPQhxgWjq) das bases legadas (Lei 8.666/93 e Decreto 10.024/2019).
