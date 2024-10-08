@@ -35,15 +35,20 @@ SELECT m.id_formalizacao_demanda
         WHEN 12 THEN 'Reprovado'                -- PC
         END tx_estado
 	, a.in_tipo
-	, CASE a.in_tipo 
-		WHEN 0 THEN 'Estudo Técnico Preliminar'
+    , CASE a.in_tipo
+        WHEN 0 THEN 'ETP'
         WHEN 1 THEN 'Matriz de Riscos'
-        WHEN 2 THEN 'Estudo Técnico Preliminar (TIC)'
-        WHEN 3 THEN 'Programação e Gestão de Contratações'
-        WHEN 4 THEN 'Documento de Formalização de Demanda'
-        WHEN 5 THEN 'Processo de Compra'
-        WHEN 6 THEN 'Termo de Referência'
-        END tx_tipo_artefato
+        WHEN 2 THEN 'ETP (TIC)'
+        WHEN 3 THEN 'Ainda sem uso'
+        WHEN 4 THEN 'DFD'
+        WHEN 5 THEN 'PGC'
+        WHEN 6 THEN 'TR'
+        WHEN 7 THEN 'Aviso de Contratação'
+        WHEN 8 THEN 'Contrato'
+        WHEN 9 THEN 'Ata de Registro de Preços'
+        WHEN 10 THEN 'Edital'
+        WHEN 11 THEN 'Outros tipos de documento'
+        END AS tx_tipo_artefato  
 	, a.nm_uasg
 	, a.id_unico
 	, a.bo_sigiloso
