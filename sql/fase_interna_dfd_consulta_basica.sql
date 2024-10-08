@@ -53,9 +53,9 @@ SELECT m.id_formalizacao_demanda
 	, m.tx_nome_padrao_descritivo
 	, m.tx_codigo tx_codigo_material_servico
 	, m.tx_descricao tx_descricao_material_servico
-FROM Comprasnet_faseinterna_VBL.material_servico m
-    JOIN Comprasnet_faseinterna_VBL.formalizacao_demanda f ON f.id_formalizacao_demanda = m.id_formalizacao_demanda
-    JOIN Comprasnet_faseinterna_VBL.artefato a ON a.id_artefato = f.id_artefato
+FROM Comprasnet_faseinterna_VBL.artefato a
+    JOIN Comprasnet_faseinterna_VBL.formalizacao_demanda f ON a.id_artefato = f.id_artefato
+    JOIN Comprasnet_faseinterna_VBL.material_servico m ON f.id_formalizacao_demanda = m.id_formalizacao_demanda
 WHERE 1=1
     AND a.in_tipo = 4
 --	AND ano_pca = 2023
