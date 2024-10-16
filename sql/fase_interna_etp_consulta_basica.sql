@@ -30,8 +30,7 @@ SELECT
 FROM artefato a
 	JOIN secao_artefato s ON a.id_artefato = s.id_artefato
 	JOIN item_secao i ON i.id_item_secao = s.id_secao_artefato
-WHERE 1=1
+WHERE 6=10
 	AND a.in_tipo = 0
-	AND a.nr_ano = 2021
-	AND a.nr_artefato = 42
-;
+	AND a.nr_ano = 2023
+--	AND a.nr_artefato = 42;
