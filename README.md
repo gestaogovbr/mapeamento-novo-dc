@@ -1,8 +1,4 @@
-# Credenciamento PNCP 
-
-Mapeamento dos fluxos de compras no âmbinto do Novo DC do ComprasGov.
-
-## Fluxo base de credenciamento
+# Reposito para abrigar as consultas de artefatos do Mapeamento do Novo DC 
 
 Esse repositório tem como objetivo mapear o fluxo de credenciamento no âmbito do Novo DC do ComprasGov.
 
