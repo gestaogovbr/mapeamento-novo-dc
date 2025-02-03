@@ -50,11 +50,10 @@ SELECT
     i.in_obrigatorio AS in_obrigatorio_item,
     i.dt_hora_operacao AS dt_operacao_item,
     i.id_operacao AS id_operacao_item,
-    i.id_login_operacao AS id_login_item,
-    i.conteudo AS conteudo_item
+    i.id_login_operacao AS id_login_item
 FROM Comprasnet_faseinterna_VBL.artefato a
     JOIN Comprasnet_faseinterna_VBL.secao_artefato s ON a.id_artefato = s.id_artefato
     JOIN Comprasnet_faseinterna_VBL.item_secao i ON i.id_item_secao = s.id_secao_artefato
 WHERE 1=1
     AND a.in_tipo = 10
-    AND a.nr_ano IN (2023, 2024);
+    AND a.nr_ano IN (2024)
